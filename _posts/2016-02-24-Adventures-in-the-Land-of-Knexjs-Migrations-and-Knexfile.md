@@ -151,4 +151,4 @@ exports.down = function(knex, Promise) {
 It's important to put the _down_ function, because if something goes wrong you can simply _knex migrate:rollback_ and try again.
 
 ### Getting Real
-# TODO: real life examples
+[ ] TODO: real life examples
