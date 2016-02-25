@@ -37,10 +37,13 @@ The above snippet is a simple connection to a _postgres_ database. If it evaluat
 Using the _pg variable_ we can do some nice things:
 
 ```javascript
-pg('table_name').insert({id: 1, colName: 'asd', col2Name: 'asdasd'})
-pg.select('*').from('table_name').then((x) => console.log(x))
-Selecting and inserting data couldn't be easier!
+pg('table_name')
+	.insert({id: 1, colName: 'asd', col2Name: 'asdasd'})
+pg.select('*')
+	.from('table_name')
+	.then((x) => console.log(x))
 ```
+Selecting and inserting data couldn't be easier!
 
 With promises your life sure can be easier, no more callback hells! improving on the snipper above, for the selection (the same can also apply to the insertion), we can make the _promise_, oops, select does something (in this case, _console.error_) if any of the operations preceding it goes wrong:
 
